@@ -1,0 +1,35 @@
+@extends('layout')
+
+@section('content')
+
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container col-md-7">
+            <h1 class="text text-light fs-2 fw-bold m-4">Drugs Overview </h1>
+                <div class="row">
+                    @foreach ($Drugs as $Drug)
+                        <div class="col-4">
+                            <div class="card mb-4 box-shadow bg-dark text-light border-secondary">
+                                <img src="/Bilder/Medikamente-Bilder/Medikament.jpg" class="card-img-top" alt="Medikament">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $Drug->name }}</h5>
+                                    <p class="card-text">{{ $Drug->name }}</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <td><a href="drugDetail.blade.php" class="btn btn-primary">View</a>
+                                                <td><a href="" class="btn btn-warning">Edit</a>
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        @endforeach
+                </div>
+            </div>
+        </section>
+    </main>
+
+@endsection
