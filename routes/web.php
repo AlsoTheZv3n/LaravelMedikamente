@@ -21,6 +21,9 @@ Route::get('/', function() {
 
 Route::get('/' , [DrugsController::class, 'index']);
 
+Route::get('/view/{id}' , [DrugsController::class, 'view'])->middleware('readauth');
+Route::get('/view/{id}' , [DrugsController::class, 'view'])->middleware('editauth');
+Route::get('/view/{id}' , [DrugsController::class, 'view'])->middleware('createauth');
 
 Route::get('/pharma', function() {
     return view('pharma');

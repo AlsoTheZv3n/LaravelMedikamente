@@ -34,10 +34,6 @@
     <button id="registerbtn" class="register btn"><a href="/register">Register</a></button>
     </div>
 
-    <!-- Edit Button -->
-    <div class="edit" id="edit">
-    <button id="editbtn" class="edit btn"><a href="/edit">Edit</a></button>
-    </div>
 
 </body>
 </html>

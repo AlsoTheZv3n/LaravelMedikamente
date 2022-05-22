@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Drug extends Model
+class EffectType extends Model
 {
     use HasFactory;
 
-    protected $table = 'Drugs';
+    protected $table = 'EffectType';
 
     protected $primaryKey = 'id';
 
@@ -17,15 +17,4 @@ class Drug extends Model
     {
         return $this->hasMany(Effect::class);
     }
-
-    public function symptoms()
-    {
-        return $this->hasMany(Symptom::class);
-    }
-
-    public function pharmas()
-    {
-        return $this->belongsTo(Pharma::class);
-    }
-
 }

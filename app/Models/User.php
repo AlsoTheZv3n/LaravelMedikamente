@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Drug;
 
 class User extends Authenticatable
 {
@@ -18,8 +19,10 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
+        'firstname',
+        'lastname',
+        'username',
+        'role',
         'password',
     ];
 
@@ -39,6 +42,10 @@ class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'username_verified_at' => 'datetime',
     ];
+
+    public function drugs() {
+        return $this->hasMany(Drug::class);
+    }
 }

@@ -21,6 +21,8 @@ return new class extends Migration
             $table->unsignedBigInteger('effect_id');
             $table->foreign('drug_id')->references('id')->on('drugs');
             $table->foreign('effect_id')->references('id')->on('effects');
+
+            $table->foreign('drug_id')->references('id')->on('drugs');
         });
     }
 

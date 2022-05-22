@@ -17,16 +17,15 @@
                                     <p class="card-text">{{ $Drug->name }}</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <td><a href="drugDetail.blade.php" class="btn btn-primary">View</a>
-                                                <td><a href="" class="btn btn-warning">Edit</a>
+                                            <td><a href="/view/{{ $Drug->id }}" class="btn btn-primary">View</a></td>
+                                            <td><a href="" class="btn btn-warning">Edit</a></td>
                                                 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-                        @endforeach
+                    @endforeach
                 </div>
             </div>
         </section>
