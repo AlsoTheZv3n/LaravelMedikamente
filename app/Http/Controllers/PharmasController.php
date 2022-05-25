@@ -18,5 +18,18 @@ class PharmasController extends Controller
         
     }
 
+    public function edit($id){
+        $post = POST::find($id);
+        return view('posts.edit')->with('post', $post);
+
+    }
+
+    public function destroy($id){
+        $post = POST::find($id);
+        $post->delete();
+        return redirect('/admins')->with('success', 'Post Updated');
+
+    }
+
     
 }

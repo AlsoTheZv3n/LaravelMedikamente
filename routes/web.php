@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DrugsController;
 use App\Http\Controllers\PharmasController;
+use App\Http\Controllers\AdminsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,11 +23,26 @@ Route::get('/', function() {
 Route::get('/' , [DrugsController::class, 'index']);
 
 Route::get('/view/{id}' , [DrugsController::class, 'view'])->middleware('readauth');
-Route::get('/view/{id}' , [DrugsController::class, 'view'])->middleware('editauth');
-Route::get('/view/{id}' , [DrugsController::class, 'view'])->middleware('createauth');
+
+Route::get('/view/{id}' , [DrugsController::class, 'edit'])->middleware('editauth');
+Route::get('/view/{id}' , [DrugsController::class, 'create'])->middleware('createauth');
 
 Route::get('/pharma', function() {
     return view('pharma');
 });
 
 Route::get('/pharma' , [PharmasController::class, 'index']);
+Route::get('/pharma/{pharma}/edit' , [PharmaController::class, 'edit']);
+Route::get('/pharma/{pharma}/destroy' , [PharmaController::class, 'destroy']);
+
+
+Route::get('/admin', function() {
+    return view('admin');
+});
+
+Route::get('/admin' , [AdminsController::class, 'index']);
+Route::get('/admins/{admin}' , [AdminsController::class, 'index']);
+Route::get('/admins/{admin}/edit' , [AdminsController::class, 'edit']);
+Route::get('/admins/{admin}/destroy' , [AdminsController::class, 'destroy']);
+
+Route::get('/users/{id}', [UsersController::class, 'show']);

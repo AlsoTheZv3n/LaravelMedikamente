@@ -7,9 +7,6 @@
             <a class="nav-link active fs-6" aria-current="page" href="/pharma">Pharma</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active fs-6" aria-current="page" href="/profile">Profile</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link active fs-6" aria-current="page" href="/admin">Admin</a>
           </li>
       </div>

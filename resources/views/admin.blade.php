@@ -11,16 +11,16 @@
             <thead class="fs-5 fw-bold">
                 <tr>
                     <th scope="col">Berechtigung</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">Benutzername</th>
                     <th scope="col">Bearbeiten</th>
                     <th scope="col">Löschen</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach( $Admin as $Admins )
+                @foreach( $User as $Users )
                 <tr>
-                    <td>{{ $Admins->BerechtigungName }}</td>
-                    <td>{{ $Admins->Name }}</td>
+                    <td>{{ $Users->role }}</td>
+                    <td>{{ $Users->username }}</td>
                     <td><a href="Pharma" class="btn btn-success">Edit</a>
                     <td><a href="Pharma" class="btn btn-danger">Delete</a>   
                 </tr>
