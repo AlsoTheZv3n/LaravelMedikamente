@@ -29,11 +29,5 @@
     <button id="loginbtn" class="login btn"><a href="/login">Login</a></button>
     </div>
 
-    <!-- Register Button -->
-    <div class="register" id="register">
-    <button id="registerbtn" class="register btn"><a href="/register">Register</a></button>
-    </div>
-
-
 </body>
 </html>
