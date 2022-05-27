@@ -18,9 +18,6 @@ return new class extends Migration
             $table->timestamps();
             $table->string('name');
             $table->unsignedBigInteger('drug_id');
-            $table->unsignedBigInteger('effect_id');
-            $table->foreign('drug_id')->references('id')->on('drugs');
-            $table->foreign('effect_id')->references('id')->on('effects');
 
             $table->foreign('drug_id')->references('id')->on('drugs');
         });

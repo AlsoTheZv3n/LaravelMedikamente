@@ -18,7 +18,7 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
                                             <td><a href="/view/{{ $Drug->id }}" class="btn btn-primary">View</a></td>
-                                            <td><a href="" class="btn btn-warning">Edit</a></td>
+                                            <td><a href="/edit/{{ $Drug->id }}" class="btn btn-warning">Edit</a></td>
                                                 
                                         </div>
                                     </div>

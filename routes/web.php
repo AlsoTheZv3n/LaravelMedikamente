@@ -22,10 +22,10 @@ Route::get('/', function() {
 
 Route::get('/' , [DrugsController::class, 'index']);
 
-Route::get('/view/{id}' , [DrugsController::class, 'view'])->middleware('readauth');
+Route::get('/view/{id}' , [DrugsController::class, 'view'])->middleware('auth', 'readauth');
 
-Route::get('/view/{id}' , [DrugsController::class, 'edit'])->middleware('editauth');
-Route::get('/view/{id}' , [DrugsController::class, 'create'])->middleware('createauth');
+Route::get('/edit/{id}' , [DrugsController::class, 'edit'])->middleware('auth', 'editauth');
+Route::put('/edit/{id}' , [DrugsController::class, 'update'])->middleware('auth', 'editauth');
 
 Route::get('/pharma', function() {
     return view('pharma');
