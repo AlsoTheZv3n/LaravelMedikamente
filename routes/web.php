@@ -42,3 +42,6 @@ Route::get('/admins/{admin}/edit' , [AdminsController::class, 'edit']);
 Route::get('/admins/{admin}/destroy' , [AdminsController::class, 'destroy']);
 
 Route::get('/users/{id}', [UsersController::class, 'show']);
+
+Route::get('/drugEdit/{id}' , [DrugsController::class, 'index']);
+Route::get('/pharmaEdit/{id}' , [PharmasController::class, 'index']);

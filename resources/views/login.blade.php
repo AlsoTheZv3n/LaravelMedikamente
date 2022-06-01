@@ -12,7 +12,7 @@
                 <div class="row mb-3">
                     <label for="exampleFormControlInput1" class="col-sm-2 col-form-label fs-6 text-light" style="colour: hsl(179, 72%, 50%);">Username</label>
                     <div class="col-sm-10">
-                    <input type="text" class="opacity-50 form-control fs-6 text-light" id="username" name="username">
+                    <input type="text" class="opacity-50 form-control fs-6" id="username" name="username">
                     </div>
                 </div>
 
