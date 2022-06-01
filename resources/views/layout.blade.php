@@ -16,7 +16,7 @@
 
     <!-- Logout Button -->
     <div class="logout" id="logout">
-    <button id="logoutnbtn" class="logout btn"><a href="#" onclick="document.querySelector('#logoutForm').submit()">Logout</a></button>
+    <button id="logoutnbtn" class="logout btn"><a href="/login" onclick="document.querySelector('#logoutForm').submit()">Logout</a></button>
     </div>
 
     <!-- Logout Fortify -->

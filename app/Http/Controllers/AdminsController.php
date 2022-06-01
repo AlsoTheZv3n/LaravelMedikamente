@@ -11,7 +11,7 @@ class AdminsController extends Controller
 
         return view ('admin', [
     
-            'user' => User::all(),
+            'User' => User::all(),
     
         ]);
         

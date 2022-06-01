@@ -36,10 +36,6 @@ Route::get('/pharma/{pharma}/edit' , [PharmaController::class, 'edit']);
 Route::get('/pharma/{pharma}/destroy' , [PharmaController::class, 'destroy']);
 
 
-Route::get('/admin', function() {
-    return view('admin');
-});
-
 Route::get('/admin' , [AdminsController::class, 'index']);
 Route::get('/admins/{admin}' , [AdminsController::class, 'index']);
 Route::get('/admins/{admin}/edit' , [AdminsController::class, 'edit']);
