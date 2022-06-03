@@ -35,8 +35,7 @@
                 </div>
                 @endif
 
-                <button href="/login" type="submit" id="login" class="btn btn-primary">Login</button>
-                <button href="/register"type="submit" id="register" class="btn btn-warning">Register</button>
+                <button type="submit" id="login" class="btn btn-primary">Login</button>
 
             </form>
 </div>

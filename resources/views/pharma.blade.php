@@ -19,8 +19,8 @@
                 @foreach( $Pharma as $Pharmas )
                 <tr>
                     <td>{{ $Pharmas->name }}</td>
-                    <td><a href="Pharma" class="btn btn-success">Edit</a>
-                    <td><a href="Pharma" class="btn btn-danger">Delete</a>   
+                    <td><a href="pharma/edit/{{ $Pharmas->id }}" class="btn btn-success">Edit</a>
+                    <td><a href="pharma/delete/{{ $Pharmas->id }}" class="btn btn-danger">Delete</a>   
                 </tr>
                 @endforeach
             </tbody>

@@ -26,25 +26,25 @@ class DrugSeeder extends Seeder
             [
                 'name' => 'Elvanse',
                 'price'=> 2.50,
-                'user_id' => 2,
+                'user_id' => 1,
                 'pharma_id' => 2,
             ],
             [
                 'name' => 'Xanax',
                 'price'=> 3.60,
-                'user_id' => 3,
+                'user_id' => 1,
                 'pharma_id' => 3,
             ],
             [
                 'name' => 'Paracitamol',
                 'price'=> 8.30,
-                'user_id' => 4,
+                'user_id' => 1,
                 'pharma_id' => 4,
             ],
             [
                 'name' => 'Levoceterizin',
                 'price'=> 8.40,
-                'user_id' => 5,
+                'user_id' => 1,
                 'pharma_id' => 5,
             ]
 

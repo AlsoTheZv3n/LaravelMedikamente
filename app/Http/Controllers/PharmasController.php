@@ -18,16 +18,31 @@ class PharmasController extends Controller
         
     }
 
-    public function edit($id){
-        $post = POST::find($id);
-        return view('posts.edit')->with('post', $post);
+    public function edit(int $id){
+        $pharma = Pharma::find($id);
+
+        return view('pharmaEdit', [
+            'pharma' => $pharma,
+        ]);
 
     }
 
+    public function update(int $id, Request $request) {
+        $pharma = Pharma::find($id);
+
+        $name = $request->name;
+
+        $pharma->name = $name;
+
+        $pharma->save();
+        
+        return redirect('/pharma');
+    }
+
     public function destroy($id){
-        $post = POST::find($id);
-        $post->delete();
-        return redirect('/admins')->with('success', 'Post Updated');
+        $pharma = Pharma::find($id);
+        $pharma->delete();
+        return redirect('/pharma');
 
     }
 

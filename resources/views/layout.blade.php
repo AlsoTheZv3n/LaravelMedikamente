@@ -16,7 +16,7 @@
 
     <!-- Logout Button -->
     <div class="logout" id="logout">
-    <button id="logoutnbtn" class="logout btn"><a href="/login" onclick="document.querySelector('#logoutForm').submit()">Logout</a></button>
+    <button id="logoutnbtn" class="logout btn"><a href="#" onclick="document.querySelector('#logoutForm').submit()">Logout</a></button>
     </div>
 
     <!-- Logout Fortify -->
@@ -27,6 +27,11 @@
     <!-- Login Button -->
     <div class="login" id="login">
     <button id="loginbtn" class="login btn"><a href="/login">Login</a></button>
+    </div>
+
+    <!-- Login Button -->
+    <div class="register" id="register">
+    <button id="registerbtn" class="register btn"><a href="/register">Register</a></button>
     </div>
 
 </body>

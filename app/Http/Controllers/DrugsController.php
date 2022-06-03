@@ -21,11 +21,11 @@ class DrugsController extends Controller
     public function view(int $id){
 
         $drugs = Drug::find($id);
-        // $effects = Effect::where('drug_id', $id)->get();
+        $effects = Effect::where('drug_id', $id)->get();
 
         return view ('drugDetail', [
             'drugs' => $drugs,
-            // 'effects' => $effects,
+            'effects' => $effects,
         ]);
         
     }

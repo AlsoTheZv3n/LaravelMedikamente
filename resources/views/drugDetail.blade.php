@@ -10,6 +10,10 @@
 
     <p class="text-light fs-5">{{ $drugs->price }}</p>
 
+    @foreach( $effects as $effect )
+    <p class="text-light fs-5">{{ $effect->name }}</p>
+    @endforeach
+
 </div>
 
 @endsection

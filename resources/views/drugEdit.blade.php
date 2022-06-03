@@ -7,6 +7,7 @@
 
     <form action="" method="POST">
         @csrf
+        @method('PUT')
         <div class="row mb-3">
         <label for="adminedit" class="form-label col-sm-2 text-light fs-5">Name</label>
         <div class="col-sm-10">

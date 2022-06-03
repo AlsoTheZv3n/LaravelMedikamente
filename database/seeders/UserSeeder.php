@@ -18,14 +18,6 @@ class UserSeeder extends Seeder
         
 
         DB::table('users')->insert([
-
-            [
-                'username' => 'meier',
-                'lastname' => 'Meier',
-                'firstname' => 'Hans',
-                'password' => bcrypt('123'), 
-                'role' => 'cherfarzt',
-            ],
             [
                 'username' => 'rocha',
                 'lastname' => 'Rocha',
@@ -33,28 +25,6 @@ class UserSeeder extends Seeder
                 'password' => bcrypt('123'),
                 'role' => 'facharzt',
             ],
-            [
-                'username' => 'mueller',
-                'lastname' => 'Mueller',
-                'firstname' => 'Markus',
-                'password' => bcrypt('123'),
-                'role' => 'arzt',
-            ],
-            [
-                'username' => 'ernst',
-                'lastname' => 'Ernst',
-                'firstname' => 'Ralf',
-                'password' => bcrypt('123'),
-                'role' => 'arzt',
-            ],
-            [
-                'username' => 'ralphen',
-                'lastname' => 'Ralphen',
-                'firstname' => 'Polo',
-                'password' => bcrypt('123'),
-                'role' => 'arzt',
-            ]
-
         ]);
     }
 }

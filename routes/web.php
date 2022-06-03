@@ -32,8 +32,12 @@ Route::get('/pharma', function() {
 });
 
 Route::get('/pharma' , [PharmasController::class, 'index']);
-Route::get('/pharma/{pharma}/edit' , [PharmaController::class, 'edit']);
-Route::get('/pharma/{pharma}/destroy' , [PharmaController::class, 'destroy']);
+
+Route::get('/pharma/edit/{pharmaId}', [PharmasController::class, 'edit']);
+Route::put('/pharma/edit/{pharmaId}', [PharmasController::class, 'update']);
+
+
+Route::get('/pharma/delete/{pharmaId}' , [PharmasController::class, 'destroy']);
 
 
 Route::get('/admin' , [AdminsController::class, 'index']);
@@ -44,4 +48,4 @@ Route::get('/admins/{admin}/destroy' , [AdminsController::class, 'destroy']);
 Route::get('/users/{id}', [UsersController::class, 'show']);
 
 Route::get('/drugEdit/{id}' , [DrugsController::class, 'index']);
-Route::get('/pharmaEdit/{id}' , [PharmasController::class, 'index']);
+
