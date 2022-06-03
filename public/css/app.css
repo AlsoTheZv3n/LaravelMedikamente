@@ -57,6 +57,18 @@ body {
     margin-bottom: 6px;
 }
 
+.create {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    min-height: 30px;
+    font-size: 1rem;
+    margin-left: 640px;
+    margin-bottom: 6px;
+}
+
 a {
     text-decoration: none;
     color: white;
