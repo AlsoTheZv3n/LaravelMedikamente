@@ -36,7 +36,7 @@
 
     <!-- Create cards Button -->
     <div class="create" id="create">
-    <button id="createbtn" class="create btn"><a href="/create">Create new Card</a></button>
+    <button id="createbtn" class="create btn"><a href="/drug">Create new Card</a></button>
     </div>
 
 
