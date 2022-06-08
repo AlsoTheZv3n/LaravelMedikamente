@@ -49,6 +49,6 @@ Route::get('/users/{id}', [UsersController::class, 'show']);
 
 Route::get('/drugEdit/{id}' , [DrugsController::class, 'index']);
 
-Route::create('/drug' , [DrugsController::class, 'create']);
+Route::get('/drug' , [DrugsController::class, 'create']);
 
 

@@ -7,6 +7,7 @@ use App\Models\Drug;
 use App\Models\Effect;
 
 
+
 class DrugsController extends Controller
 {
     
@@ -63,8 +64,8 @@ class DrugsController extends Controller
         $drug->name = $name;
         $drug->price = $price;
 
-        $drug->drug_id = auth()->user->id;
-        $drug->drug_id = $drugId;
+        $drug->user_id = auth()->user()->id;
+        $drug->pharma_id = $pharma->id;
         
         $drug->save();
 
