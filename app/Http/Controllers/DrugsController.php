@@ -52,4 +52,24 @@ class DrugsController extends Controller
         return redirect('/');
     }
 
+
+    public function create(Request $request) {
+    
+        $drug = new Drug();
+
+        $name = $request->name;
+        $price = $request->price;
+
+        $drug->name = $name;
+        $drug->price = $price;
+
+        $drug->drug_id = auth()->user->id;
+        $drug->drug_id = $drugId;
+        
+        $drug->save();
+
+        return redirect('/');
+    }
+
+
 }
