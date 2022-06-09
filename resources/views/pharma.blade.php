@@ -26,8 +26,6 @@
             </tbody>
         </table>
 
-        <button type="button" href="/pharma" id="pharma" class="btn btn-info">Pharma</button>
-
     </div>
 
 </div>
