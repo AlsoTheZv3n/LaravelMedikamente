@@ -66,7 +66,6 @@ class DrugsController extends Controller
 
         $drug->user_id = auth()->user()->id;
         $drug->pharma_id = $pharma->id;
-        $drug->pharma_id = $request->pharma;
         
         $drug->save();
 
