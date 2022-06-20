@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Drug;
 
 class DrugsCreateController extends Controller
 {
@@ -13,14 +14,12 @@ class DrugsCreateController extends Controller
 
         $name = $request->name;
         $price = $request->price;
+        $pharma = $request->pharmaid;
 
         $drug->name = $name;
         $drug->price = $price;
-        $drug->effect = $name;
-        $drug->effect_type = $name;
-
         $drug->user_id = auth()->user()->id;
-        $drug->pharma_id = $pharma->id;
+        $drug->pharma_id = $pharma;
         
         $drug->save();
 
